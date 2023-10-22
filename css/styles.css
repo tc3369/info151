@@ -11,6 +11,7 @@ html {
     Variables
 ============= */
 :root {
+  --purple: #651096
   --black: #000000;
   --white: #ffffff;
 }
@@ -331,6 +332,10 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--purple);
+}
+
 /* =============
     Typography
 ============= */
