@@ -11,6 +11,9 @@ html {
     Variables
 ============= */
 :root {
+  --trial: #42B4EE;
+  --lightblue: #42B4EE;
+  --purple: #651096;
   --black: #000000;
   --white: #ffffff;
 }
@@ -337,6 +340,11 @@ template {
 /* =============
     Buttons
 ============= */
+#package {
+  background-color: var(--lightblue);
+  color: var(--white);
+}
+
 /* =============
     Forms
 ============= */
