@@ -11,11 +11,11 @@ html {
     Variables
 ============= */
 :root {
-  --trial: #42B4EE;
   --lightblue: #42B4EE;
   --purple: #651096;
   --black: #000000;
   --white: #ffffff;
+  --grey: #9090A7;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,6 +337,26 @@ template {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 360;
+  height: 480;
+}
+
 /* =============
     Buttons
 ============= */
@@ -376,3 +396,34 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Plans
+============= */
+#plans #Classic {
+  background-color: var(--purple);
+  color: var(--white);
+}
+#plans #grey {
+  color: var(--grey);
+}
+#plans ul {
+  padding: 69px;
+  border: 1px solid var(--grey);
+  border-radius: 360px, 480px;
+  display: inline-block;
+}
+#plans #classic {
+  padding: 69px;
+  border: 1px solid var(--grey);
+  border-radius: 360px, 480px;
+}
+#plans li h2 {
+  color: var(--black);
+}
+#plans li h3 {
+  color: var(--black);
+}
+#plans #white {
+  color: var(--white);
+  background-color: var(--purple);
+}
