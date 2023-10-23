@@ -343,6 +343,13 @@ body {
 /* =============
     Buttons
 ============= */
+.blue_button {
+  background-color: var(--trial);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Forms
 ============= */
@@ -388,3 +395,13 @@ header nav ul #trial a {
 /* =============
     Hero
 ============= */
+#Hero {
+  margin-top: 78px;
+}
+
+p #Demo {
+  background-color: var(--trial);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
