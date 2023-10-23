@@ -1,9 +1,11 @@
 /* =============
     Buttons
 ============= */
-#package{
-    background-color: var(--lightblue);
-    color: var(--white);
-    padding: 15px 30px;
-    border-radius: 5px;
+li{
+    button{
+        background-color: var(--lightblue);
+        color: var(--white);
+        padding: 15px 30px;
+        border-radius: 5px;
+    }
 }

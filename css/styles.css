@@ -360,7 +360,7 @@ section {
 /* =============
     Buttons
 ============= */
-#package {
+li button {
   background-color: var(--lightblue);
   color: var(--white);
   padding: 15px 30px;
