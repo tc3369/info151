@@ -11,7 +11,8 @@ html {
     Variables
 ============= */
 :root {
-  --purple: #651096
+  --trial: #42B4EE;
+  --purple: #651096;
   --black: #000000;
   --white: #ffffff;
 }
@@ -368,6 +369,22 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: var(--purple);
+}
+header nav ul li a {
+  color: var(--white);
+}
+header nav ul #trial a {
+  background-color: var(--trial);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Footer
+============= */
+/* =============
+    Hero
 ============= */
