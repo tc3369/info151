@@ -397,5 +397,13 @@ textarea {
 ============= */
 #footer body {
   background-color: var(--black);
-  color: var(--white);
+  color: var(--white) #resources;
+  color-display: inline-block;
+  color-margin: 50px;
+  color-padding: 50px;
+}
+#footer body ul {
+  display: inline-block;
+  margin: 50px;
+  padding: 50px;
 }
