@@ -422,13 +422,9 @@ textarea {
   margin-top: 100px;
   vertical-align: top;
 }
-#footer #codext ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-#footer #codext a {
-  display: inline;
+#footer #codext section li {
+  display: inline-block;
+  text-align: center;
 }
 #footer #resources {
   height: 207px;

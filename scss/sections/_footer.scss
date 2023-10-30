@@ -18,15 +18,11 @@
             margin-top: 100px;
             vertical-align: top;
 
-            ul{
-                display: inline-flex;
-            }
-            #lorem{
-
-            }
-
-            a{
-                display: inline;
+            section{
+                li{
+                display: inline-block;
+                text-align: center;
+                }
             }
         }
         #resources{
