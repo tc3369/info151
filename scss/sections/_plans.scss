@@ -2,23 +2,54 @@
     Plans
 ============= */
 #plans{
-    #Classic{
-        background-color: var(--purple);
-        color: var(--white);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    header{
+        font-size: 22;
+        font-weight: 600;
+        margin-bottom: 5%;
     }
     #grey{
         color: var(--grey)
     }
     ul{
-        padding: 69px; 
+         
         border: 1px solid var(--grey);
         border-radius: 360px, 480px;
         display: inline-block;
+        width: 20%;
+        height: 300px;
+        position: relative;
+        vertical-align: top;
+        padding-top: 5%;
+        margin-top: 5%;
+
+        #startupheader{
+            padding-bottom: 5%;
+        }
+        #classicheader{
+            padding-bottom: 5%;
+        }
+        #premiumheader{
+            padding-bottom: 5%;
+
+        }
     }
     #classic{
-        padding: 69px; 
         border: 1px solid var(--grey);
         border-radius: 360px, 480px;
+        font-weight: 300;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        #classicheader{
+            background-color: var(--purple);
+            color: var(--white);
+        }
+    }
+    #startup{
+        box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+    }
+    #premium{
+        box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
     }
     li{
         h2{ color: var(--black)}
@@ -27,5 +58,24 @@
     #white{
         color: var(--white);
         background-color: var(--purple);
+    }
+    #header{
+        text-align: center;
+        margin-top: 5%;
+    }
+    button{
+        margin-top: 50px;
+    }
+    #validator{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #switch{
+        width: 83px;
+height: 33px;
+flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid #42B4EE;
+        background: rgba(66, 180, 238, 0.20);
     }
 }

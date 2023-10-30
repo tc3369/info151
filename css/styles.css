@@ -334,12 +334,17 @@ template {
 /* =============
     Base
 ============= */
+a {
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 p {
@@ -350,6 +355,8 @@ p {
 ul {
   margin: 0;
   padding: 0;
+  text-align: center;
+  list-style: none;
 }
 
 section {
@@ -399,23 +406,56 @@ textarea {
 /* =============
     Plans
 ============= */
-#plans #Classic {
-  background-color: var(--purple);
-  color: var(--white);
+#plans {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+#plans header {
+  font-size: 22;
+  font-weight: 600;
+  margin-bottom: 5%;
 }
 #plans #grey {
   color: var(--grey);
 }
 #plans ul {
-  padding: 69px;
   border: 1px solid var(--grey);
   border-radius: 360px, 480px;
   display: inline-block;
+  width: 20%;
+  height: 300px;
+  position: relative;
+  vertical-align: top;
+  padding-top: 5%;
+  margin-top: 5%;
+}
+#plans ul #startupheader {
+  padding-bottom: 5%;
+}
+#plans ul #classicheader {
+  padding-bottom: 5%;
+}
+#plans ul #premiumheader {
+  padding-bottom: 5%;
 }
 #plans #classic {
-  padding: 69px;
   border: 1px solid var(--grey);
   border-radius: 360px, 480px;
+  font-weight: 300;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#plans #classic #classicheader {
+  background-color: var(--purple);
+  color: var(--white);
+}
+#plans #startup {
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+}
+#plans #premium {
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
 }
 #plans li h2 {
   color: var(--black);
@@ -426,4 +466,24 @@ textarea {
 #plans #white {
   color: var(--white);
   background-color: var(--purple);
+}
+#plans #header {
+  text-align: center;
+  margin-top: 5%;
+}
+#plans button {
+  margin-top: 50px;
+}
+#plans #validator {
+  text-align: center;
+  margin-top: 20px;
+}
+#plans #switch {
+  width: 83px;
+  height: 33px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #42B4EE;
+  background: rgba(66, 180, 238, 0.2);
 }
