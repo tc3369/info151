@@ -335,6 +335,26 @@ template {
 ============= */
 body {
   background-color: var(--purple);
+  color: var(--white);
+}
+body #herotitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+body #validator {
+  position: absolute;
+  text-align: center;
+}
+
+#p2 {
+  font-weight: 400;
+  font-size: 16;
 }
 
 /* =============
@@ -396,6 +416,40 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 10%;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--white);
+  font-size: 15;
+  font-weight: 300;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--trial);
+}
+nav ul li a.blue-link {
+  color: var(blue);
+}
+nav ul li a.selected {
+  color: var(--trial);
+}
+
 /* =============
     Header
 ============= */
@@ -420,11 +474,47 @@ header nav ul #trial a {
 ============= */
 #Hero {
   margin-top: 78px;
+  font-family: "Inter", sans-serif;
+  margin-left: 10%;
 }
-
-p #Demo {
+#Hero h1 {
+  font-size: 22;
+  font-weight: 600;
+}
+#Hero ul {
+  list-style: none;
+}
+#Hero header {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#Hero header p {
+  margin-left: 5%;
+}
+#Hero header #codextpic {
+  margin-left: 5%;
+  margin-right: 15%;
+}
+#Hero header ul {
+  display: inline-block;
+}
+#Hero #Demo {
   background-color: var(--trial);
   color: var(--white);
   padding: 15px 30px;
   border-radius: 5px;
+}
+#Hero nav {
+  display: inline-block;
+}
+#Hero section #herotitle {
+  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
 }

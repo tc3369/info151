@@ -3,5 +3,21 @@
 ============= */
 body{
     background-color: var(--purple);
-}
+    color: var(--white);
 
+    #herotitle{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    #validator{
+        position: absolute;
+        text-align: center;
+    }
+    
+}
+#p2{
+    font-weight: 400;
+    font-size: 16;
+
+}

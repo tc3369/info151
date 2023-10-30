@@ -3,12 +3,47 @@
 ============= */
 #Hero{
    margin-top: 78px;
+   font-family: 'Inter', sans-serif;
+   margin-left: 10%;
+
+   h1{
+    font-size: 22;
+    font-weight: 600;
+   }
+   ul{
+    list-style: none;
+   }
+    header{
+        margin-top: 5%;
+        margin-left: 5%;
+        p{
+            margin-left: 5%;
+        }
+        #codextpic{
+            margin-left: 5%;
+            margin-right: 15%;
+        }
+        ul{
+            display: inline-block;
+
+        }
     }
-p{
     #Demo{
         background-color: var(--trial);
         color: var(--white);
         padding: 15px 30px;
         border-radius: 5px;
     }
+    nav{
+        display: inline-block;
+    }
+    section{
+        #herotitle{
+            color: var(--white);
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        }
+    }
 }
+
