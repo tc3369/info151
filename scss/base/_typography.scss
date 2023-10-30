@@ -2,9 +2,18 @@
     Typography
 ============= */
 
+body{
+    font-family: 'Inter', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 h1,h2,h3,h4,h5{
     margin: 0;
     padding: 0;
+    font-weight: 600;
+    font-size: 22;
+    padding-bottom: 5%;
 }
 
 p{
@@ -15,6 +24,9 @@ p{
 ul{
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-size: 18;
+    font-weight: 400;
 }
 section{
     width: 360;

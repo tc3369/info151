@@ -5,6 +5,81 @@
 #footer{
     body{
     background-color: var(--black);
-    color: var(--white)
+    color: var(--white);
+    width: 1600px;
+    height: 504px;
     }
-}
+        #codext{
+            height: 230px;
+            width: 30%; 
+            border: 1px solid var(--black);
+            border-radius: 280px, 240px;
+            display: inline-block;
+            margin-top: 100px;
+            vertical-align: top;
+
+            ul{
+                display: inline-flex;
+            }
+            #lorem{
+
+            }
+
+            a{
+                display: inline;
+            }
+        }
+        #resources{
+            height: 207px;
+            width: 20%;
+            border: 1px solid var(--black);
+            border-radius: 115px, 207px;
+            display: inline-block;
+            margin-top: 100px;
+            vertical-align: top;
+        }
+        #usefullinks{
+            height: 207px;
+            width: 20%; 
+            border: 1px solid var(--black);
+            border-radius: 153px, 207px;
+            display: inline-block;
+            margin-top: 100px;
+            vertical-align: top;
+        }
+
+        #newsletter{
+            height: 207px;
+            width: 25%; 
+            border: 1px solid var(--black);
+            border-radius: 306px, 194px;
+            display: inline-block;
+            margin-top: 100px;
+            vertical-align: top;
+        }
+        footer{
+            text-align: center;
+            bottom: 0;
+            height: 60px;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: white;
+            padding-top: 30px;
+            margin-top: 5%;
+        }
+        #button{
+            background-color: var(--blue);
+            height: 56px;
+            width: hug;
+            position: absolute;
+        }
+        #input{
+            background-color: black;
+            color: white;
+            height: 49px;
+            width: hug;
+        }
+        
+    } 
+
+
