@@ -351,6 +351,17 @@ body #validator {
   position: absolute;
   text-align: center;
 }
+body footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 #p2 {
   font-weight: 400;
@@ -517,4 +528,17 @@ header nav ul #trial a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 25%;
+}
+#Hero body footer div a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 50%;
+  margin-right: 50%;
 }
