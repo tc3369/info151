@@ -4,23 +4,29 @@
 header{
     background-color: var(--purple);
 
-    nav{
-        ul{
-            li{
-                a{
-                    color: var(--white);
-                }
-            }
-            #trial{
-                a{
-                    background-color: var(--trial);
-                    color: var(--white);
-                    padding: 15px 30px;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 20px;
+    align-items: center;
 }
+
+//     nav{
+//         ul{
+//             li{
+//                 a{
+//                     // color: var(--white);
+//                 }
+//             }
+//             #trial{
+//                 a{
+//                     background-color: var(--trial);
+//                     color: var(--white);
+//                     padding: 15px 30px;
+//                     border-radius: 5px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
     

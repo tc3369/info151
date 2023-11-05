@@ -2,30 +2,35 @@
     Hero
 ============= */
 #Hero{
-   margin-top: 78px;
+//    margin-top: 78px;
    font-family: 'Inter', sans-serif;
-   margin-left: 10%;
-
+//    margin-left: 10%;
+    body{
+        #herobody{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        }
+    }
+    
    h1{
-    font-size: 22;
+    font-size: 40px;
     font-weight: 600;
    }
    ul{
     list-style: none;
    }
     header{
-        margin-top: 5%;
-        margin-left: 5%;
-        p{
-        margin-left: 5%;
+        // margin-top: 5%;
+        // margin-left: 5%;
+        // p{
+        // margin-left: 5%;
         }
         #codextpic{
-        margin-left: 5%;
-        margin-right: 15%;
+        // margin-left: 5%;
+        // margin-right: 15%;
         }
         ul{
-        display: inline-block;
-
+        // display: inline-block;
         }
     }
     #Demo{
@@ -35,30 +40,22 @@
         border-radius: 5px;
     }
     nav{
-        display: inline-block;
+        // display: inline-block;
     }
-    section{
-        #herotitle{
-            color: var(--white);
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-        }
+    #herotitle{
+        color: var(--white);
+        // display: flex;
+        // flex-direction: column;
+        // width: 25%;
     }
     body{
-        footer{
-            div{
-                a{
-                    img{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-left: 50%;
-                        margin-right: 50%;
-                    }
-                }
-
+    #validator{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        text-align: center;
     }
-}
-}
-}
+    }
+    
+      
+

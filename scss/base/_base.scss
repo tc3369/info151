@@ -5,28 +5,58 @@ body{
     background-color: var(--purple);
     color: var(--white);
 
-    #herotitle{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-    }
-    #validator{
-        position: absolute;
-        text-align: center;
-    }
-
-        footer{
-            div{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                        
-                    }
-                }
+    main{
+            display: grid;
+            grid-template-columns: 10% auto 10%;
+            grid-template-areas: ". maingriditem ."; 
+            margin-top: 15px;
+            
+        #maingriditem{  
+            grid-area: maingriditem;  
         }
-        
-#p2{
-    font-weight: 400;
-    font-size: 16;
+        header{
+            font-family: 'Inter', sans-serif;
 
+        }
+        #herobody{
+            font-family: 'Inter', sans-serif;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: 40% 50%;
+            grid-template-areas: "herotitle house";
+
+            img{
+                max-width: 100%;
+                max-height: 700px;
+            }
+            div{
+                // width: 300px;
+                // height: auto;
+
+                img{
+                    max-width: 100%;
+                }
+            }
+            #herotitle{
+                display: grid;
+                grid-template-rows: auto auto auto;
+                width: 300px;
+                height: auto;
+
+                h1{
+                    padding: 10px;                
+                }
+                #p2{
+                    padding: 10px;
+                    font-weight: 400;
+                    font-size: 16;
+                }
+                #p3{ 
+                    padding: 10px;
+                }
+            
+            }
+        }
+    }
+      
 }

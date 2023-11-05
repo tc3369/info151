@@ -10,7 +10,7 @@ nav{
     ul{
         display: flex;
         justify-content: flex-end;
-        margin-right: 10%;
+        margin-right: 15%;
         li{
             list-style: none;
             margin-left: 25px;
@@ -30,7 +30,18 @@ nav{
             a.selected{
                 color: var(--trial);
             }
-
+            
+            a{
+                color: var(--white);
+            }
+            #trial{
+                a{
+                    background-color: var(--trial);
+                    color: var(--white);
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                }
+            }
         }
     }
 }

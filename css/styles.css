@@ -337,35 +337,56 @@ body {
   background-color: var(--purple);
   color: var(--white);
 }
-body #herotitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%;
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto 10%;
+  grid-template-columns: 10% auto 10%;
+      grid-template-areas: ". maingriditem .";
+  margin-top: 15px;
 }
-body #validator {
-  position: absolute;
-  text-align: center;
+body main #maingriditem {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: maingriditem;
 }
-body footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+body main header {
+  font-family: "Inter", sans-serif;
 }
-
-#p2 {
+body main #herobody {
+  font-family: "Inter", sans-serif;
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 50%;
+  grid-template-columns: 40% 50%;
+      grid-template-areas: "herotitle house";
+}
+body main #herobody img {
+  max-width: 100%;
+  max-height: 700px;
+}
+body main #herobody div img {
+  max-width: 100%;
+}
+body main #herobody #herotitle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
+  width: 300px;
+  height: auto;
+}
+body main #herobody #herotitle h1 {
+  padding: 10px;
+}
+body main #herobody #herotitle #p2 {
+  padding: 10px;
   font-weight: 400;
   font-size: 16;
+}
+body main #herobody #herotitle #p3 {
+  padding: 10px;
 }
 
 /* =============
@@ -438,7 +459,7 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 nav ul li {
   list-style: none;
@@ -460,21 +481,29 @@ nav ul li a.blue-link {
 nav ul li a.selected {
   color: var(--trial);
 }
+nav ul li a {
+  color: var(--white);
+}
+nav ul li #trial a {
+  background-color: var(--trial);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
 
 /* =============
     Header
 ============= */
 header {
   background-color: var(--purple);
-}
-header nav ul li a {
-  color: var(--white);
-}
-header nav ul #trial a {
-  background-color: var(--trial);
-  color: var(--white);
-  padding: 15px 30px;
-  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* =============
@@ -484,61 +513,39 @@ header nav ul #trial a {
     Hero
 ============= */
 #Hero {
-  margin-top: 78px;
   font-family: "Inter", sans-serif;
-  margin-left: 10%;
+}
+#Hero body #herobody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
 #Hero h1 {
-  font-size: 22;
+  font-size: 40px;
   font-weight: 600;
 }
 #Hero ul {
   list-style: none;
 }
-#Hero header {
-  margin-top: 5%;
-  margin-left: 5%;
-}
-#Hero header p {
-  margin-left: 5%;
-}
-#Hero header #codextpic {
-  margin-left: 5%;
-  margin-right: 15%;
-}
-#Hero header ul {
-  display: inline-block;
-}
-#Hero #Demo {
+#Demo {
   background-color: var(--trial);
   color: var(--white);
   padding: 15px 30px;
   border-radius: 5px;
 }
-#Hero nav {
-  display: inline-block;
-}
-#Hero section #herotitle {
+
+#herotitle {
   color: var(--white);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 25%;
 }
-#Hero body footer div a img {
+
+body #validator {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 50%;
-  margin-right: 50%;
+  text-align: center;
 }
