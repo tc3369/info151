@@ -9,7 +9,7 @@ a{
 body{
     main{
         display: grid;
-        grid-template-columns: auto 1170px auto;
+        grid-template-columns: auto 1080px auto;
         grid-template-areas: ". maincontent .";
 
         #maingriditem{
@@ -20,10 +20,11 @@ body{
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas: "startup classic premium";
                 gap:40px;
-                margin: 65; 
+                margin: 65px; 
                 margin-top: 20px; 
                 margin-left: 90px;
                 margin-right: 90px;
+                vertical-align: center;
                 // height: auto;
 
                 ol{
@@ -51,16 +52,18 @@ body{
                 }
                 #classic{
                     grid-area: classic;
-                    padding: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 12px;
                     justify-items: center;
                     align-items: center;
+                    background-color: white;
 
-                    div{
-                        background-color: var(--purple);
+                    // div{
+                        // background-color: var(--purple);
                         // margin: none;
                         // padding: none;
                         // position: relative;
-                    }
+                    // }
                 }
                 #premium{
                     grid-area: premium;

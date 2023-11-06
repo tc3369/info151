@@ -341,8 +341,8 @@ a {
 body main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1170px auto;
-  grid-template-columns: auto 1170px auto;
+  -ms-grid-columns: auto 1080px auto;
+  grid-template-columns: auto 1080px auto;
       grid-template-areas: ". maincontent .";
 }
 body main #maingriditem {
@@ -357,10 +357,11 @@ body main #maingriditem section {
   grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "startup classic premium";
   gap: 40px;
-  margin: 65;
+  margin: 65px;
   margin-top: 20px;
   margin-left: 90px;
   margin-right: 90px;
+  vertical-align: center;
 }
 body main #maingriditem section ol {
   padding-left: 0px;
@@ -385,14 +386,13 @@ body main #maingriditem section #classic {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: classic;
-  padding: 10px;
+  padding-bottom: 10px;
+  margin-top: 12px;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-body main #maingriditem section #classic div {
-  background-color: var(--purple);
+  background-color: white;
 }
 body main #maingriditem section #premium {
   -ms-grid-row: 1;
@@ -481,30 +481,40 @@ textarea {
   margin-bottom: 10px;
   margin-left: 5%;
   margin-right: 5%;
+  vertical-align: middle;
   /* general styling */
 }
 .container .switch {
   display: inline-block;
   height: 25px;
   position: relative;
-  width: 80px;
+  width: 100px;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-color: rgb(101, 203, 244);
+  border: 2px solid var(black);
 }
 .container .switch input {
   display: none;
+  vertical-align: middle;
 }
 .container .slider {
-  background-color: blue;
+  background-color: rgb(186, 219, 248);
   bottom: 0;
   cursor: pointer;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
+  margin-bottom: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  vertical-align: middle;
+  border: 2px solid var(black);
 }
 .container .slider:before {
-  background-color: skyblue;
+  background-color: rgb(101, 203, 244);
   bottom: 4px;
   content: "";
   height: 20px;
@@ -512,20 +522,25 @@ textarea {
   position: absolute;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  width: 20px;
+  width: 40px;
+  vertical-align: middle;
+  border: 2px solid var(black);
 }
 .container input:checked + .slider {
-  background-color: blue;
+  background-color: rgb(178, 178, 248);
 }
 .container input:checked + .slider:before {
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
 }
 .container .slider.round {
-  border-radius: 80px;
+  border-radius: 40px;
+  vertical-align: middle;
 }
 .container .slider.round:before {
-  border-radius: 50%;
+  border-radius: 10px/50%;
+  vertical-align: middle;
+  border: 2px solid var(black);
 }
 .container html, .container body {
   height: 100%;
@@ -567,12 +582,13 @@ textarea {
   -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
 }
-#plans ul #startupheader {
+#plans ul padd #startupheader {
   padding-bottom: 5%;
   padding-top: 5%;
 }
 #plans ul #classicheader {
   padding-bottom: 0px;
+  padding-top: 5%;
 }
 #plans ul #premiumheader {
   padding-bottom: 5%;
@@ -583,8 +599,8 @@ textarea {
 #plans #classic {
   border: 1px solid var(--grey);
   font-weight: 300;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0px var(--purple);
+          box-shadow: 0px 4px 4px 0px var(--purple);
 }
 #plans #classic #classicheader {
   background-color: var(--purple);
@@ -620,4 +636,33 @@ textarea {
 #plans #validator {
   text-align: center;
   margin-top: 20px;
+}
+#plans #classicheader {
+  background-color: var(--purple);
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+#plans #classicheader li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+}
+#plans #classicheader li h2 {
+  color: white;
 }
