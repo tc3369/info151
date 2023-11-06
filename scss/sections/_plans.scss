@@ -28,7 +28,7 @@
             padd
 
         #startupheader{
-            padding-bottom: 5%;
+            // padding-bottom: 5%;
             padding-top: 5%;
         }
         #classicheader{
@@ -143,5 +143,19 @@
                 }
             }
         }
-    
+    .startupli{
+        li{
+            padding: 7px;
+        }
+    }
+}
+.premiumli{
+    li{
+        padding: 7px;
+    }
+}
+.classicli{
+    li{
+        padding: 7px;
+    }
 }

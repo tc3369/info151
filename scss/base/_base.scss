@@ -7,15 +7,19 @@ a{
 }
 
 body{
+    list-style: none;
     main{
+        list-style: none;
         display: grid;
         grid-template-columns: auto 1080px auto;
         grid-template-areas: ". maincontent .";
 
         #maingriditem{
             grid-area: maincontent;
+            list-style: none;
 
-            section{
+            section{            
+                list-style: none;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas: "startup classic premium";
@@ -27,7 +31,19 @@ body{
                 vertical-align: center;
                 // height: auto;
 
-                ol{
+                div{
+                    ol{
+                        list-style: none;
+                        padding-left: 0px;
+
+                        #startupli{
+                            padding: 4px;
+                            
+                        }
+                    }
+                }
+
+                ul{
                     padding-left: 0px;
                     padding: 4px;
                 }

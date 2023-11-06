@@ -338,7 +338,11 @@ a {
   text-align: center;
 }
 
+body {
+  list-style: none;
+}
 body main {
+  list-style: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1080px auto;
@@ -349,8 +353,10 @@ body main #maingriditem {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: maincontent;
+  list-style: none;
 }
 body main #maingriditem section {
+  list-style: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
@@ -363,7 +369,14 @@ body main #maingriditem section {
   margin-right: 90px;
   vertical-align: center;
 }
-body main #maingriditem section ol {
+body main #maingriditem section div ol {
+  list-style: none;
+  padding-left: 0px;
+}
+body main #maingriditem section div ol #startupli {
+  padding: 4px;
+}
+body main #maingriditem section ul {
   padding-left: 0px;
   padding: 4px;
 }
@@ -583,7 +596,6 @@ textarea {
   grid-template-rows: repeat(3, 1fr);
 }
 #plans ul padd #startupheader {
-  padding-bottom: 5%;
   padding-top: 5%;
 }
 #plans ul #classicheader {
@@ -665,4 +677,15 @@ textarea {
 }
 #plans #classicheader li h2 {
   color: white;
+}
+#plans .startupli li {
+  padding: 7px;
+}
+
+.premiumli li {
+  padding: 7px;
+}
+
+.classicli li {
+  padding: 7px;
 }
