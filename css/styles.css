@@ -338,6 +338,73 @@ a {
   text-align: center;
 }
 
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". maincontent .";
+}
+body main #maingriditem {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: maincontent;
+}
+body main #maingriditem section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "startup classic premium";
+  gap: 40px;
+  margin: 65;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+body main #maingriditem section ol {
+  padding-left: 0px;
+  padding: 4px;
+}
+body main #maingriditem section #start-up {
+  grid-area: start-up;
+  padding: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+}
+body main #maingriditem section #start-up #startupheader {
+  margin: 0%;
+  padding: 0px;
+  width: 100%;
+}
+body main #maingriditem section #classic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: classic;
+  padding: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main #maingriditem section #classic div {
+  background-color: var(--purple);
+}
+body main #maingriditem section #premium {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: premium;
+  padding: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -400,6 +467,83 @@ textarea {
 /* =============
     Header
 ============= */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* general styling */
+}
+.container .switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 80px;
+}
+.container .switch input {
+  display: none;
+}
+.container .slider {
+  background-color: blue;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.container .slider:before {
+  background-color: skyblue;
+  bottom: 4px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 20px;
+}
+.container input:checked + .slider {
+  background-color: blue;
+}
+.container input:checked + .slider:before {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+.container .slider.round {
+  border-radius: 80px;
+}
+.container .slider.round:before {
+  border-radius: 50%;
+}
+.container html, .container body {
+  height: 100%;
+  margin: 0;
+}
+.container body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f1f2f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .container {
+  margin: 0 auto;
+}
+
 /* =============
     Footer
 ============= */
@@ -413,34 +557,31 @@ textarea {
 #plans header {
   font-size: 22;
   font-weight: 600;
-  margin-bottom: 5%;
 }
 #plans #grey {
   color: var(--grey);
 }
 #plans ul {
-  border: 1px solid var(--grey);
-  border-radius: 360px, 480px;
-  display: inline-block;
-  width: 20%;
-  height: 300px;
-  position: relative;
-  vertical-align: top;
-  padding-top: 5%;
-  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
 }
 #plans ul #startupheader {
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 #plans ul #classicheader {
-  padding-bottom: 5%;
+  padding-bottom: 0px;
 }
 #plans ul #premiumheader {
   padding-bottom: 5%;
 }
+#plans ul #startupbutton {
+  padding-bottom: 6px;
+}
 #plans #classic {
   border: 1px solid var(--grey);
-  border-radius: 360px, 480px;
   font-weight: 300;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -466,6 +607,8 @@ textarea {
 #plans #white {
   color: var(--white);
   background-color: var(--purple);
+  margin: 0%;
+  padding: 0%;
 }
 #plans #header {
   text-align: center;
@@ -477,13 +620,4 @@ textarea {
 #plans #validator {
   text-align: center;
   margin-top: 20px;
-}
-#plans #switch {
-  width: 83px;
-  height: 33px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  border-radius: 20px;
-  border: 1px solid #42B4EE;
-  background: rgba(66, 180, 238, 0.2);
 }
