@@ -378,7 +378,12 @@ body main #maingriditem section div ol #startupli {
 }
 body main #maingriditem section ul {
   padding-left: 0px;
-  padding: 4px;
+}
+body main #maingriditem section ul li ol {
+  width: 100%;
+}
+body main #maingriditem section ul li ol li #makethiswhite {
+  color: white;
 }
 body main #maingriditem section #start-up {
   grid-area: start-up;
@@ -401,11 +406,16 @@ body main #maingriditem section #classic {
   grid-area: classic;
   padding-bottom: 10px;
   margin-top: 12px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: white;
+  width: 100%;
+}
+body main #maingriditem section #classic .premiumheader {
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+body main #maingriditem section #classic .premiumheader h3 {
+  color: white;
 }
 body main #maingriditem section #premium {
   -ms-grid-row: 1;
@@ -416,6 +426,10 @@ body main #maingriditem section #premium {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.classicheader h3 {
+  color: white;
 }
 
 /* =============
@@ -506,7 +520,7 @@ textarea {
   margin-left: 6px;
   margin-right: 6px;
   border-color: rgb(101, 203, 244);
-  border: 2px solid var(black);
+  border-style: rgb(101, 203, 244);
 }
 .container .switch input {
   display: none;
@@ -524,14 +538,15 @@ textarea {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   vertical-align: middle;
-  border: 2px solid var(black);
+  border: 2px solid rgb(101, 203, 244);
 }
 .container .slider:before {
   background-color: rgb(101, 203, 244);
-  bottom: 4px;
+  bottom: 2px;
   content: "";
-  height: 20px;
+  height: 18px;
   left: 4px;
+  top: 2px;
   position: absolute;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -595,7 +610,7 @@ textarea {
   -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
 }
-#plans ul padd #startupheader {
+#plans ul #startupheader {
   padding-top: 5%;
 }
 #plans ul #classicheader {
@@ -652,16 +667,24 @@ textarea {
 #plans #classicheader {
   background-color: var(--purple);
   width: 100%;
-  height: 100%;
+  height: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5px;
+  padding-top: 20px;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+#plans #classicheader .centerthis {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #plans #classicheader li {
   -webkit-box-pack: center;
@@ -690,6 +713,11 @@ textarea {
   padding: 7px;
 }
 
-#premiumheader {
+.premiumheader {
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+.premiumheader h3 {
   color: white;
 }
