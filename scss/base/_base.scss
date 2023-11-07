@@ -2,6 +2,154 @@
     Base
 ============= */
 #footer{
-background-color: var(--black);
-color: var(--white)
+    background-color: var(--black);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-areas: ". maingriditem .";
+    margin-top: 15%;
+    align-items: center;
+    justify-content: center;
+
+    #bodyitem{
+        grid-area: maingriditem;
+        vertical-align: top;
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // // gap: 10%;
+    // justify-content: center;
+    // align-items: center;
+    // // height: 100%;
+    // // width: 100%;
+    // // margin-left: 0;
+    // // margin-right: 20%;
+    // // margin-top: 30px;
+    // #maingriditem{
+    //     #bodyitem{
+    //         grid-area: maingriditem;
+    //         height: 100%;
+    //         width: 100%;
+
+    //         display: grid;
+    //         grid-template-columns: 30% 20% 20% 20%;
+    //         grid-template-areas: "codextcard resourcescard linkscard newslettercard";
+    //         gap: 5%;
+    //         // justify-items: center;
+    //         // align-items: center;
+    //         // vertical-align: top;
+
+            // #codextcard{
+            //     grid-area: codextcard;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+    
+            // #resourcescard{
+            //     grid-area: resourcescard;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+            // #linkscard{
+            //     grid-area: linkscard;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+            // #newslettercard{
+            //     grid-area: newslettercard;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
+        }
+        // grid-area: maingriditem;
+        // height: 100%;
+        // width: 100%;
+
+        // justify-items: center;
+        // // align-items: center;
+        // vertical-align: top;
+    // }
+    // main{
+        
+    //     // display: grid;
+    //     // grid-template-columns: 30% 20% 20% 20%;
+    //     // grid-template-areas: "codextcard resourcescard linkscard newslettercard";
+    //     // gap: 5%;
+    //     // // justify-items: center;
+    //     // // align-items: center;
+    //     // vertical-align: top;
+
+    //     #codextcard{
+    //         grid-area: codextcard;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+
+    //     #resourcescard{
+    //         grid-area: resourcescard;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    //     #linkscard{
+    //         grid-area: linkscard;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    //     #newslettercard{
+    //         grid-area: newslettercard;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    // }
+ul{
+    margin: 0;
+    padding: 4px;
+
+        li{
+            padding: 4px;
+            list-style: none;
+        }
+}
+h2{
+    padding: 8px;
+    margin: 0;
+}
+
+
+// }
+
+body{
+    #validator{
+        a{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.socialmedia{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5px;
+    margin: 0;
+    // justify-content: center;
+    // align-items: center;
+
+    li{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0;
+    }
 }

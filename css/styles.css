@@ -335,6 +335,61 @@ template {
 #footer {
   background-color: var(--black);
   color: var(--white);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 800px auto;
+  grid-template-columns: auto 800px auto;
+      grid-template-areas: ". maingriditem .";
+  margin-top: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#footer #bodyitem {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: maingriditem;
+  vertical-align: top;
+}
+
+ul {
+  margin: 0;
+  padding: 4px;
+}
+ul li {
+  padding: 4px;
+  list-style: none;
+}
+
+h2 {
+  padding: 8px;
+  margin: 0;
+}
+
+body #validator a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialmedia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px;
+  margin: 0;
+}
+.socialmedia li {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
 }
 
 /* =============
@@ -404,56 +459,7 @@ textarea {
 /* =============
     Footer
 ============= */
-/* =============
-    Footer
-============= */
-#footer body {
-  background-color: var(--black);
-  color: var(--white);
-  width: 1600px;
-  height: 504px;
-}
-#footer #codext {
-  height: 230px;
-  width: 30%;
-  border: 1px solid var(--black);
-  border-radius: 280px, 240px;
-  display: inline-block;
-  margin-top: 100px;
-  vertical-align: top;
-}
-#footer #codext section li {
-  display: inline-block;
-  text-align: center;
-}
-#footer #resources {
-  height: 207px;
-  width: 20%;
-  border: 1px solid var(--black);
-  border-radius: 115px, 207px;
-  display: inline-block;
-  margin-top: 100px;
-  vertical-align: top;
-}
-#footer #usefullinks {
-  height: 207px;
-  width: 20%;
-  border: 1px solid var(--black);
-  border-radius: 153px, 207px;
-  display: inline-block;
-  margin-top: 100px;
-  vertical-align: top;
-}
-#footer #newsletter {
-  height: 207px;
-  width: 25%;
-  border: 1px solid var(--black);
-  border-radius: 306px, 194px;
-  display: inline-block;
-  margin-top: 100px;
-  vertical-align: top;
-}
-#footer footer {
+footer {
   text-align: center;
   bottom: 0;
   height: 60px;
@@ -462,14 +468,55 @@ textarea {
   border-top-color: white;
   padding-top: 30px;
   margin-top: 5%;
+  margin-bottom: 30px;
+  margin-left: 0%;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-left: 0%;
 }
-#footer #button {
+
+/* =============
+    Footer
+============= */
+#footer body {
+  background-color: var(--black);
+  color: var(--white);
+}
+#footer #bodyitem {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 20% 20% auto;
+  grid-template-columns: 40% 20% 20% auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  vertical-align: top;
+}
+#footer #bodyitem #codextcard #img {
+  padding: 7px;
+}
+#footer #bodyitem div {
+  vertical-align: top;
+}
+#footer #bodyitem div h2 {
+  padding-bottom: 10%;
+}
+
+#button {
   background-color: var(--blue);
   height: 56px;
   width: hug;
   position: absolute;
 }
-#footer #input {
+
+#input {
   background-color: black;
   color: white;
   height: 49px;
