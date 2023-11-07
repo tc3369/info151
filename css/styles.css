@@ -507,7 +507,8 @@ footer {
   vertical-align: top;
 }
 #footer #bodyitem #codextcard #img {
-  padding: 7px;
+  padding: 5px;
+  margin-bottom: 5%;
 }
 #footer #bodyitem div {
   vertical-align: top;
