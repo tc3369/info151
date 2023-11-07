@@ -392,6 +392,11 @@ body #validator a {
   margin: 0;
 }
 
+body {
+  width: 100%;
+  margin-left: 0;
+}
+
 /* =============
     Typography
 ============= */
@@ -469,7 +474,7 @@ footer {
   padding-top: 30px;
   margin-top: 5%;
   margin-bottom: 30px;
-  margin-left: 0%;
+  margin-left: 0;
   position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -484,9 +489,11 @@ footer {
 /* =============
     Footer
 ============= */
-#footer body {
+#footer {
   background-color: var(--black);
   color: var(--white);
+  width: 100%;
+  margin-left: 0;
 }
 #footer #bodyitem {
   display: -ms-grid;
