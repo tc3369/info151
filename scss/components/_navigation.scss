@@ -1,3 +1,69 @@
 /* =============
     Navigation
 ============= */
+nav{
+    margin-top: 20px;
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    
+        li{
+            text-decoration: none;
+            color: gray;
+            border-bottom: 1px solid gray;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 10px;
+    
+            a:link, a:visited{
+                padding: 15px 10px 15px 15px;
+                display: inline-block;
+                // font-size: x-large;
+                margin-bottom: 12px;
+                color: gray;
+                font-weight: 600;
+                transition: 0.25s;
+                text-decoration: none!important;
+            }
+            a:hover, a:active{
+                color: black;
+            }
+        }
+        // .signinup{
+        //     ul{
+        //         li{
+        //             display: flex;
+        //         flex-direction: row;
+        //         }
+        //         display: flex;
+        //         flex-direction: row;
+        //     }
+        // }
+        // a:link{
+        //     text-decoration: none!important;
+        //   }
+    }
+}
+.signinup{
+    li span{
+        background-color: aqua;
+        color: white;
+        border-radius: 8px;
+        padding: 5px;
+        text-align: center;
+        vertical-align: center;
+        align-items: center;
+        display: inline-block;
+    }
+    
+
+}
