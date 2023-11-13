@@ -1,12 +1,11 @@
 /* =============
     Hero
 ============= */
-
-body{
-    #hero{
-        background-image: url(C:\Users\antho\GitHub\info151\img\heroimg.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-    }
+#hero{
+    // background-image: url("../img/heroimg.jpg");
+    background-image: url("../img/hero.jpg");
+    // background-image: url("C:\Users\antho\GitHub\info151\img\heroimg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
