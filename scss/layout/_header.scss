@@ -124,10 +124,11 @@ header{
         }
     }
 
-    #nav-container{
-        grid-area: nav;
-        justify-content: end;
-        text-decoration: none;
+    // #nav-container{
+    //     grid-area: nav;
+    //     justify-content: end;
+    //     text-decoration: none;
+    //     display: none;
 
         // ul{
         //     text-decoration: none;
@@ -141,8 +142,5 @@ header{
         @include xl{
             display: flex;
         }
-    }
-    @include xl{
-        padding: 0%;
-    }
+    // }
 }

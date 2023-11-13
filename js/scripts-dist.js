@@ -1,0 +1,1 @@
+var mainnav=document.querySelectorAll(nav),burgerBtn=document.querySelector("burgerBtn");function showNav(){mainnav.classList.add("shownav")}console.log(mainnav),console.log("hello");
