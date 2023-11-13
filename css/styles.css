@@ -338,6 +338,11 @@ template {
   height: 100vh;
 }
 
+#validator {
+  text-align: center;
+  margin-top: 100px;
+}
+
 /* =============
     Typography
 ============= */
