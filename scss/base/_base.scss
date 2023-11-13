@@ -9,6 +9,11 @@
     background-size: cover;
     height: 100vh;
     text-decoration: none;
+
+    section{
+        display: flex;
+        padding: 0%;
+    }
 }
 #validator{
     text-align: center;

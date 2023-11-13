@@ -4,10 +4,102 @@
 header{
     padding: 12px;
     display: grid;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 50% auto 8%;
     grid-template-areas: 
     "logo . burger"
     "nav nav nav";
+
+    @include md{
+        grid-template-columns: 50% auto 4%;
+    }
+
+    @include xl{
+        grid-template-columns: 20% auto ;
+        grid-template-areas: "logo nav";
+        padding: 0%;
+
+        img{
+            padding: 4px;
+            margin: 10px;
+        }
+
+        #logo-container{
+            grid-area: logo;
+            margin: 10px;
+        }
+
+        #nav-container{
+            grid-area: nav;
+            display: flex;
+            padding-left: 20%;
+            // }
+
+            .navi{
+                // grid-area: nav;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                ul{
+                    display: flex;
+                    flex-direction: row;              
+                }
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 5px;
+                    width: 100%;
+                    
+                }
+            // .signinup{
+            //         grid-area: signup!important;
+            //         // ul{
+            //         //     grid-area: signup!important;
+            //         // }
+            //         // grid-area: signup!important;
+            //     }
+            }
+            // display: flex;
+            // flex-direction: row;
+            // width: 100%;
+            // .navi{
+                // grid-area: nav;
+                // display: flex;
+                // flex-direction: row;
+                // width: 100%;
+                // ul{
+                //     display: flex;
+                //     flex-direction: row;              
+                // }
+                // li{
+                //     display: flex;
+                //     flex-direction: row;
+                    
+                // }
+
+            // }
+            // .signinup{
+            //     grid-area: signup;
+            //     display: flex;
+            //     flex-direction: row;
+            //     width: 100%;
+            // }
+        }
+        // .signinup{
+        //     grid-area: signup!important;
+        // }
+        #burger-container{
+            grid-area: none;
+
+            // @include xl{
+            //     display: none;
+            // }
+        }
+        // .navi{
+        //     grid-area: nav;
+        // }
+        
+
+    }
 
     #logo-container{
         grid-area: logo;
@@ -20,16 +112,21 @@ header{
         grid-area: burger;
         display: flex;
         justify-content: flex-end;
-        padding: 40%;
+        padding: 80%;
+        margin-top: 10px;
         // align-items: center;
         // text-align: center;
         // padding-top: 40%;
         // width: 100%;
+
+        @include xl{
+            display: none;
+        }
     }
 
     #nav-container{
         grid-area: nav;
-        // justify-content: end;
+        justify-content: end;
         text-decoration: none;
 
         // ul{
@@ -41,5 +138,11 @@ header{
         // li{
         //     text-decoration: none;
         // }
+        @include xl{
+            display: flex;
+        }
+    }
+    @include xl{
+        padding: 0%;
     }
 }

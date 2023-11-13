@@ -3,6 +3,16 @@
 ============= */
 nav{
     margin-top: 20px;
+
+    @include xl{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
     ul{
         padding: 0;
         margin: 0;
@@ -12,6 +22,14 @@ nav{
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        box-sizing: border-box;
+
+
+        @include xl{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     
         li{
             text-decoration: none;
@@ -23,9 +41,15 @@ nav{
             justify-content: flex-end;
             align-items: flex-end;
             padding: 10px;
+            box-sizing: border-box;
+
+
+            // @include xl{
+            //     display: flex;
+            // }
     
             a:link, a:visited{
-                padding: 15px 10px 15px 15px;
+                padding: 5px 5px 5px 5px;
                 display: inline-block;
                 // font-size: x-large;
                 margin-bottom: 12px;
@@ -33,6 +57,10 @@ nav{
                 font-weight: 600;
                 transition: 0.25s;
                 text-decoration: none!important;
+
+                @include xl{
+                    box-sizing: border-box;
+                }
             }
             a:hover, a:active{
                 color: black;
@@ -62,7 +90,7 @@ nav{
         text-align: center;
         vertical-align: center;
         align-items: center;
-        display: inline-block;
+        display: flex;
     }
     
 
