@@ -1,11 +1,38 @@
 /* =============
     Hero
 ============= */
+
 #hero{
-    // background-image: url("../img/heroimg.jpg");
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/heroimg.jpg");
+    background-image: url("/img/hero.jpg");
     // background-image: url("C:\Users\antho\GitHub\info151\img\heroimg.jpg");
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
+
+
 }
+// #validator{
+//     text-align: center;
+//     margin-top: 50px;
+// }
+// header{
+//     padding: 12px;
+//     display: grid;
+//     grid-template-columns: 50% auto 8%;
+//     grid-template-areas: 
+//     "logo . burger"
+//     "nav nav nav";
+
+    // @include md {
+    //     grid-template-columns: 50% auto 4%;
+    // }
+
+    // @include xl{
+    //     grid-template-columns: 20% auto ;
+    //     grid-template-areas: "logo nav";
+    //     padding: 0%;
+    // }
+
+
+// }

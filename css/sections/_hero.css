@@ -1,0 +1,13 @@
+/* =============
+    Hero
+============= */
+#hero {
+  background-image: url("../img/heroimg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#hero #validator {
+  text-align: center;
+  margin-top: 50px;
+}

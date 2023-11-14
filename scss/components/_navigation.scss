@@ -1,101 +1,101 @@
 /* =============
     Navigation
 ============= */
-.showmainnav{
-    display: flex !important;
-}
+// .showmainnav{
+//     display: flex !important;
+// }
 
-nav{
-    margin-top: 20px;
+// nav{
+//     // margin-top: 20px;
 
-    @include xl{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        box-sizing: border-box;
+//     @include xl{
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: flex-start;
+//         width: 100%;
+//         box-sizing: border-box;
         
-    }
-    ul{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        box-sizing: border-box;
+//     }
+//     // ul{
+//     //     padding: 0;
+//     //     margin: 0;
+//     //     list-style: none;
+//     //     text-decoration: none;
+//     //     display: flex;
+//     //     flex-direction: column;
+//     //     justify-content: flex-end;
+//     //     align-items: flex-end;
+//     //     box-sizing: border-box;
 
 
-        @include xl{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
+//         @include xl{
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: space-evenly;
+//         }
     
-        li{
-            text-decoration: none;
-            color: gray;
-            border-bottom: 1px solid gray;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding: 10px;
-            box-sizing: border-box;
+//         li{
+//             text-decoration: none;
+//             color: gray;
+//             border-bottom: 1px solid gray;
+//             width: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: flex-end;
+//             align-items: flex-end;
+//             padding: 10px;
+//             box-sizing: border-box;
 
 
-            // @include xl{
-            //     display: flex;
-            // }
+//             // @include xl{
+//             //     display: flex;
+//             // }
     
-            a:link, a:visited{
-                padding: 5px 5px 5px 5px;
-                display: inline-block;
-                // font-size: x-large;
-                margin-bottom: 12px;
-                color: gray;
-                font-weight: 600;
-                transition: 0.25s;
-                text-decoration: none!important;
+//             a:link, a:visited{
+//                 padding: 5px 5px 5px 5px;
+//                 display: inline-block;
+//                 // font-size: x-large;
+//                 margin-bottom: 12px;
+//                 color: gray;
+//                 font-weight: 600;
+//                 transition: 0.25s;
+//                 text-decoration: none!important;
 
-                @include xl{
-                    box-sizing: border-box;
-                }
-            }
-            a:hover, a:active{
-                color: black;
-            }
-        }
-        // .signinup{
-        //     ul{
-        //         li{
-        //             display: flex;
-        //         flex-direction: row;
-        //         }
-        //         display: flex;
-        //         flex-direction: row;
-        //     }
-        // }
-        // a:link{
-        //     text-decoration: none!important;
-        //   }
-    }
-}
-.signinup{
-    li span{
-        background-color: aqua;
-        color: white;
-        border-radius: 8px;
-        padding: 5px;
-        text-align: center;
-        vertical-align: center;
-        align-items: center;
-        display: flex;
-    }
+//                 @include xl{
+//                     box-sizing: border-box;
+//                 }
+//             }
+//             a:hover, a:active{
+//                 color: black;
+//             }
+//         }
+//         // .signinup{
+//         //     ul{
+//         //         li{
+//         //             display: flex;
+//         //         flex-direction: row;
+//         //         }
+//         //         display: flex;
+//         //         flex-direction: row;
+//         //     }
+//         // }
+//         // a:link{
+//         //     text-decoration: none!important;
+//         //   }
+//     }
+// // }
+// .signinup{
+//     li span{
+//         background-color: aqua;
+//         color: white;
+//         border-radius: 8px;
+//         padding: 5px;
+//         text-align: center;
+//         vertical-align: center;
+//         align-items: center;
+//         display: flex;
+//     }
     
 
-}
+// }
