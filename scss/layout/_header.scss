@@ -1,14 +1,49 @@
 /* =============
     Header
 ============= */
-// header{
-//     padding: 12px;
-//     display: grid;
-//     grid-template-columns: 50% auto 8%;
-//     grid-template-areas: 
-//     "logo . burger"
-//     "nav nav nav";
+header{
+    padding: 7px;
+    display: grid;
+    grid-template-columns: 50% auto 15%;
+    grid-template-areas: 
+    "logo . burger"
+    "nav nav nav";
 
+    #logo-container{
+        grid-area: logo;
+        // margin: 10px;
+
+        img{
+            padding: 1vw;
+            // width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    #burger-container{
+        height: 100%;
+        width: 100%;
+        grid-area: burger;
+        display: flex;
+        // border: 1px solid black;
+        align-items: center;
+
+        button{
+            padding: 1vw;
+            // width: ;
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+    }
+
+    nav{
+        grid-area: nav;
+        // border: 1px solid red;
+    }
+}
 //     @include md{
 //         grid-template-columns: 50% auto 4%;
 //     }

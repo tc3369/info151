@@ -336,6 +336,14 @@ template {
   margin-top: 50px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -346,6 +354,16 @@ button {
 ============= */
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* =============
@@ -374,9 +392,128 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 28px;
+}
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 1px solid gray;
+  padding: 14px;
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 15px;
+  display: inline-block;
+  color: gray;
+  font-weight: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: black;
+}
+nav .signinup ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+nav .signinup ul li {
+  border-bottom: none;
+}
+nav .signinup ul button {
+  font-family: "Open Sans", sans-serif;
+}
+nav .signinup ul #signup {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 21px 35px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav .signinup ul #signin {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 20px 35px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 7px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto 15%;
+  grid-template-columns: 50% auto 15%;
+      grid-template-areas: "logo . burger" "nav nav nav";
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+header #logo-container img {
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  height: 100%;
+  width: 100%;
+  grid-area: burger;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #burger-container button {
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */
