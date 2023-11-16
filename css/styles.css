@@ -347,6 +347,7 @@ ul li {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* =============
@@ -392,15 +393,21 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: -ms-grid !important;
+  display: grid !important;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainnav {
   margin-top: 28px;
+  display: none;
 }
 @media (min-width: 1200px) {
-  nav {
+  #mainnav {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 80% 20%;
@@ -411,11 +418,11 @@ nav {
         -ms-flex-align: center;
             align-items: center;
   }
-  nav .navi {
+  #mainnav .navi {
     grid-area: nav1;
     gap: 10%;
   }
-  nav .navi ul {
+  #mainnav .navi ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -424,13 +431,13 @@ nav {
             justify-content: center;
     gap: 10px;
   }
-  nav .navi ul li {
+  #mainnav .navi ul li {
     border-bottom: none;
   }
-  nav .signinup {
+  #mainnav .signinup {
     grid-area: signup;
   }
-  nav .signinup ul {
+  #mainnav .signinup ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -440,16 +447,16 @@ nav {
   }
 }
 @media (min-width: 1200px) {
-  nav .navi {
+  #mainnav .navi {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  nav .signinup {
+  #mainnav .signinup {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 }
-nav ul li {
+#mainnav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,11 +471,11 @@ nav ul li {
   padding: 14px;
 }
 @media (min-width: 1200px) {
-  nav ul li {
+  #mainnav ul li {
     border: none;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainnav ul li a:link, #mainnav ul li a:visited {
   padding: 15px;
   display: inline-block;
   color: gray;
@@ -476,10 +483,10 @@ nav ul li a:link, nav ul li a:visited {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-nav ul li a:hover, nav ul li a:active {
+#mainnav ul li a:hover, #mainnav ul li a:active {
   color: black;
 }
-nav .signinup ul {
+#mainnav .signinup ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,13 +495,13 @@ nav .signinup ul {
       -ms-flex-pack: end;
           justify-content: end;
 }
-nav .signinup ul li {
+#mainnav .signinup ul li {
   border-bottom: none;
 }
-nav .signinup ul button {
+#mainnav .signinup ul button {
   font-family: "Open Sans", sans-serif;
 }
-nav .signinup ul #signup {
+#mainnav .signinup ul #signup {
   background-color: black;
   border: none;
   color: white;
@@ -504,7 +511,7 @@ nav .signinup ul #signup {
   text-decoration: none;
   font-size: 16px;
 }
-nav .signinup ul #signin {
+#mainnav .signinup ul #signin {
   background-color: white;
   border: 1px solid black;
   color: black;

@@ -1,13 +1,18 @@
 /* =============
     Navigation
 ============= */
+    .showMainNav{
+        display: grid!important;
+    
+    }
+
 a{
     text-decoration: none;
 }
 
-nav{
+#mainnav{
     margin-top: 28px;
-
+    display: none;
     @include xl{
         display: grid;
         grid-template-columns: 80% 20%;
