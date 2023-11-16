@@ -467,8 +467,8 @@ header {
   padding: 7px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto 15%;
-  grid-template-columns: 50% auto 15%;
+  -ms-grid-columns: 50% auto 10%;
+  grid-template-columns: 50% auto 10%;
       grid-template-areas: "logo . burger" "nav nav nav";
 }
 header #logo-container {
