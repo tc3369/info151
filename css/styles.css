@@ -399,6 +399,56 @@ a {
 nav {
   margin-top: 28px;
 }
+@media (min-width: 1200px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80% 20%;
+    grid-template-columns: 80% 20%;
+        grid-template-areas: "nav1 signup";
+    padding: 2%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .navi {
+    grid-area: nav1;
+    gap: 10%;
+  }
+  nav .navi ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  nav .navi ul li {
+    border-bottom: none;
+  }
+  nav .signinup {
+    grid-area: signup;
+  }
+  nav .signinup ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  nav .navi {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  nav .signinup {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
 nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,6 +462,11 @@ nav ul li {
           align-items: flex-end;
   border-bottom: 1px solid gray;
   padding: 14px;
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    border: none;
+  }
 }
 nav ul li a:link, nav ul li a:visited {
   padding: 15px;
@@ -443,7 +498,7 @@ nav .signinup ul #signup {
   background-color: black;
   border: none;
   color: white;
-  padding: 21px 35px;
+  padding: 16px 35px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -453,7 +508,7 @@ nav .signinup ul #signin {
   background-color: white;
   border: 1px solid black;
   color: black;
-  padding: 20px 35px;
+  padding: 15px 35px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -464,12 +519,42 @@ nav .signinup ul #signin {
     Header
 ============= */
 header {
-  padding: 7px;
+  padding: 0;
+  margin: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% auto 10%;
   grid-template-columns: 50% auto 10%;
       grid-template-areas: "logo . burger" "nav nav nav";
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 20%;
+    grid-template-columns: 20%;
+        grid-template-areas: "logo navi";
+  }
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header #logo-container img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
+    max-height: 100px;
+    margin-top: 20px;
+  }
+  header #mainnav {
+    grid-area: navi;
+  }
 }
 header #logo-container {
   -ms-grid-row: 1;
@@ -498,8 +583,12 @@ header #burger-container {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 1200px) {
+  header #burger-container {
+    display: none;
+  }
+}
 header #burger-container button {
-  padding: 1vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,6 +601,20 @@ header nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
+}
+@media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header #mainnav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
 }
 
 /* =============

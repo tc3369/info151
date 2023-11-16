@@ -2,12 +2,54 @@
     Header
 ============= */
 header{
-    padding: 7px;
-    display: grid;
+    padding: 0;
+    margin: 0;
+    display: grid; 
     grid-template-columns: 50% auto 10%;
     grid-template-areas: 
     "logo . burger"
     "nav nav nav";
+
+    @include xl{
+        grid-template-columns: 20%% 80%;
+        grid-template-areas: "logo navi";
+
+        #logo-container{
+            grid-area: logo;
+            display: flex;
+            justify-content: center;
+
+            img{
+                justify-content: center;
+                width: 70%;
+                max-height: 100px;
+                margin-top: 20px;
+
+            }
+        }
+        #mainnav{
+            grid-area: navi;
+            
+            // display: grid;
+            // grid-template-columns: 80% 20%;
+            // grid-template-areas: "nav1 signup";
+            // padding: 2%;
+            // .navi{
+            //     grid-area: nav1;
+            //     ul{
+            //         display: flex;
+            //         justify-content: center;
+            //     }
+            // }
+            // .signinup{
+            //     grid-area: signup;
+            //     ul{
+            //         display: flex;
+            //         justify-content: flex-end;
+            //     }
+            // }
+        }
+    }
 
     #logo-container{
         grid-area: logo;
@@ -28,9 +70,12 @@ header{
         display: flex;
         // border: 1px solid black;
         align-items: center;
+        @include xl{
+            display: none;
+        }
 
         button{
-            padding: 1vw;
+            // padding: 1vw;
             // width: ;
             display: flex;
             justify-content: center;

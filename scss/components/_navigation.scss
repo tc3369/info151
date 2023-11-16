@@ -7,6 +7,35 @@ a{
 
 nav{
     margin-top: 28px;
+
+    @include xl{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: "nav1 signup";
+        padding: 2%;
+        align-items: center;
+
+        .navi{
+            grid-area: nav1;
+            gap: 10%;
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                
+                li{
+                    border-bottom: none;
+                }
+            }
+        }
+        .signinup{
+            grid-area: signup;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
     ul{
         li{
             display: flex;
@@ -15,6 +44,10 @@ nav{
             align-items: flex-end;
             border-bottom: 1px solid gray;
             padding: 14px;
+
+            @include xl{
+                border: none;
+            }
 
             a:link, a:visited{
                 padding: 15px;
@@ -48,7 +81,7 @@ nav{
                 background-color: black;
                 border: none;
                 color: white;
-                padding: 21px 35px;
+                padding: 16px 35px;
                 border-radius: 10px;
                 text-align: center;
                 text-decoration: none;
@@ -60,7 +93,7 @@ nav{
                 background-color: white;
                 border: 1px solid black;
                 color: black;
-                padding: 20px 35px;
+                padding: 15px 35px;
                 border-radius: 10px;
                 text-align: center;
                 text-decoration: none;
