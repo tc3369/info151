@@ -1,0 +1,42 @@
+/* =============
+    Sign In 
+============= */
+
+#signupform{
+    background-color: #024A5899;
+    // color: green;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    // margin-top: 20vh;
+
+    .close-btn{
+        
+    }
+
+    form{
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+        }
+        #signincontainer{
+            display: flex;
+            justify-content: flex-end;
+
+            button{
+                background-color: teal;
+                color: white;
+                border-color: white;
+            }
+        }    
+    }
+}
