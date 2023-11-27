@@ -54,4 +54,33 @@
         align-items: center;
         color: white;
     }
-
+    .sendbtn{
+        background-color: var(--greendark);
+        border: 1px solid black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .cancelbtn{
+        background-color: white !important;
+        border: 1px solid black;
+        color: var(--greendark) !important;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .close-btn2{
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }

@@ -26,7 +26,7 @@ function showNav(){
     }else{
         mainnav.classList.remove("showMainNav");
         canYouSeeMainNav = false;
-        
+
         burgerBars.classList.remove("hide-burger-bars");
         burgerX.classList.add("hide-burger-x");
     }
@@ -58,3 +58,28 @@ function hideSignInModal(){
 signInBtn.addEventListener("click", showSignInModal);
 closeSignInModalButton.addEventListener("click", hideSignInModal);
 
+// ----------------------
+//      Sign Up
+// ----------------------
+
+var signUpBtn = document.querySelector(".signup");
+var signUpContainer = document.querySelector("#signup-container");
+var closeSignUpModalButton = document.querySelector("#close-sign-up-modal-button");
+var closeSignUpModalButtontwo = document.querySelector("#cancel-btn");
+
+
+function showSignUpModal() {
+    signUpContainer.classList.add("show-signup-container")
+    mainnav.classList.remove("showMainNav");
+
+}
+
+function hideSignUpModal(){
+    signUpContainer.classList.remove("show-signup-container")
+    
+}
+
+
+signUpBtn.addEventListener("click", showSignUpModal);
+closeSignUpModalButton.addEventListener("click", hideSignUpModal);
+closeSignUpModalButtontwo.addEventListener("click", hideSignUpModal);

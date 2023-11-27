@@ -339,6 +339,12 @@ template {
   display: flex !important;
 }
 
+.show-signup-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .hide-burger-x {
   display: none !important;
 }
@@ -434,6 +440,45 @@ button {
 }
 
 .close-btn {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.sendbtn {
+  background-color: var(--greendark);
+  border: 1px solid black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.cancelbtn {
+  background-color: white !important;
+  border: 1px solid black;
+  color: var(--greendark) !important;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.close-btn2 {
   background-color: red;
   height: 50px;
   width: 50px;
@@ -753,6 +798,77 @@ header nav {
           justify-content: flex-end;
 }
 #signin-container form #signin-button-container button {
+  background-color: teal;
+  color: white;
+  border-color: white;
+}
+
+/* =============
+    Sign Up 
+============= */
+#signup-container {
+  background-color: rgba(2, 74, 88, 0.8);
+  height: 70vh;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  display: none;
+}
+#signup-container form {
+  background-color: rgba(2, 74, 88, 0.8);
+  padding: 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 1200px) {
+  #signup-container form {
+    padding: 30%;
+  }
+}
+#signup-container form #close-btn-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+#signup-container form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 25px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+#signup-container form #send-cancel-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+#signup-container form #send-cancel-button-container button {
   background-color: teal;
   color: white;
   border-color: white;
