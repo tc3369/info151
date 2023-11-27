@@ -6,8 +6,18 @@
         font-family: 'Open Sans', sans-serif;
     }
     .signup{
-        background-color: black;
-        border: none;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .signinbtn{
+        background-color: var(--greendark);
+        border: 1px solid black;
         color: white;
         padding: 10px 20px;
         border-radius: 10px;
@@ -15,14 +25,33 @@
         text-decoration: none;
         font-size: 16px;
     }
+
+    .signinbtn:hover{
+        background-color: rgb(23, 189, 189);
+        color: teal;
+    }
     .signin{
-        background-color: white;
+        background-color: var(--greendark);
         border: 1px solid black;
-        color: var(--greendark);
+        color: white;
         padding: 10px 20px;
         border-radius: 10px;
         text-align: center;
         text-decoration: none;
         font-size: 16px;
+    }
+    .signin:hover{
+        background-color: rgb(23, 189, 189);
+        color: teal;
+    }
+    .close-btn{
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
 

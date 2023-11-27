@@ -2,24 +2,34 @@
     Sign In 
 ============= */
 
-#signupform{
-    background-color: #024A5899;
+#signin-container{
+
+
+    background-color: #024A58CC;
     // color: green;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 16px;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    // margin-top: 20vh;
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 
-    .close-btn{
-        
-    }
+    display: none;
 
+    
     form{
+        background-color: #024A58CC;
+        padding: 24px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        #close-btn-container{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
         input{
             width: 100%;
             box-sizing: border-box;
@@ -28,7 +38,7 @@
             border: none;
             border-radius: 8px;
         }
-        #signincontainer{
+        #signin-button-container{
             display: flex;
             justify-content: flex-end;
 

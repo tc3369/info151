@@ -9,22 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 Hero</title>
+    <title>Week 8 Hero</title>
 </head>
 
 <body>
 
-    <section id="signupform">
-
-        <button class="close-btn"><i class="fa-solid fa-x"></i></button>
+    <section id="signin-container">
         <form action="#">
+            <div id="close-btn-container">
+                <button class="close-btn" id="close-sign-in-modal-button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <input type="text" placeholder="User Name">
             <input type="text" placeholder="Password">
-            <div id="signincontainer">
-                <button class="signin">Sign In</button>
+            <div id="signin-button-container">
+                <button class="signinbtn" id="signin-btn">Sign In</button>
             </div>
-        </form>
-
+        </form>        
     </section>
 
     <header>
@@ -33,7 +33,10 @@
         </section>
         
         <section id="burger-container">
-           <button><i class="fa-solid fa-bars"></i></button>
+           <button>
+            <i class="fa-solid fa-bars" id="burger-bars"></i>
+            <i class="fa-solid fa-xmark hide-burger-x" id="burger-x"></i>
+        </button>
         </section>
         
             <nav id="mainnav">

@@ -1,6 +1,16 @@
 /* =============
     Base
 ============= */
+.show-signin-container{
+    display: flex !important;
+}
+.hide-burger-x{
+    display: none!important;
+}
+.hide-burger-bars{
+    display: none!important;
+}
+
 #validator{
     text-align: center;
     margin-top: 50px;
