@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Week 10 Hero</title>
 </head>
@@ -96,9 +100,37 @@
     </header>
 
     <section id="hero">
+        
     </section>
 
-    <section id="fancybox">
+    <div data-aos="fade-up-left">
+        <section id="fancybox">
+            <div id="fb-grid-item">
+                <h1>Fancybox</h1>
+                <ul>
+                    
+                      <li>
+                        <a href="img/fancy/fancy-1.jpg" data-fancybox, data-fancybox="gallery-1", data-caption="beach"><img src="img/fancy/fancy-1.jpg" alt="one"></a>
+                      </li>
+                      <li>
+                        <a href="img/fancy/fancy-2.jpg" data-fancybox, data-fancybox="gallery-1", data-caption="tree"><img src="img/fancy/fancy-2.jpg" alt="one"></a>
+    
+                      </li>
+                      <li>
+                        <a href="img/fancy/fancy-3.jpg" data-fancybox, data-fancybox="gallery-1", data-caption="other beach"><img src="img/fancy/fancy-3.jpg" alt="one"></a>
+                      </li>
+                      <li>
+                        <a href="img/fancy/fancy-4.jpg" data-fancybox, data-fancybox="gallery-1", data-caption="people"><img src="img/fancy/fancy-4.jpg" alt="one"></a>
+    
+                      </li>
+                </ul>
+    
+            </div>
+        </section>
+    </div>
+
+
+    <!-- <section id="fancybox">
         <div id="fb-grid-item">
             <h1>Fancybox</h1>
             <ul>
@@ -119,6 +151,27 @@
                   </li>
             </ul>
 
+        </div> -->
+    <!-- </section> -->
+
+    <section id="fancyCarousel">
+        <div id="fc-grid-item" data-aos="flip-up">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+
+                <!-- <div class="f-carousel__slide"> <img src="img/fancy/fancy-1.jpg" alt="one"></div>
+                <div class="f-carousel__slide"> <img src="img/fancy/fancy-2.jpg" alt="two"></div>
+                <div class="f-carousel__slide"> <img src="img/fancy/fancy-3.jpg" alt="three"></div>
+                <div class="f-carousel__slide"> <img src="img/fancy/fancy-4.jpg" alt="four"></div> -->
+
+
+                <div class="f-carousel__slide"> <div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"> <div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"> <div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"> <div id="fc-4" class="slide"></div></div>
+
+
+            </div>
         </div>
     </section>
 
@@ -129,6 +182,12 @@
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="js/scripts-dist.js"></script>
     
