@@ -1,3 +1,5 @@
+Fancybox.bind()
+
 
 var mainnav = document.querySelector("#mainnav");
 
