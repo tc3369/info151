@@ -18,10 +18,13 @@
             margin-top: 100px;
             vertical-align: top;
 
-            section{
+            ol{
+                display: flex;
+                gap: 20%;
+                padding: 10px;
                 li{
-                display: inline-block;
-                text-align: center;
+              text-decoration: none;
+              list-style: none;
                 }
             }
         }
@@ -33,6 +36,10 @@
             display: inline-block;
             margin-top: 100px;
             vertical-align: top;
+
+            li{
+                padding: 10px;
+            }
         }
         #usefullinks{
             height: 207px;
@@ -42,6 +49,10 @@
             display: inline-block;
             margin-top: 100px;
             vertical-align: top;
+
+            li{
+                padding: 10px;
+            }
         }
 
         #newsletter{
@@ -52,6 +63,10 @@
             display: inline-block;
             margin-top: 100px;
             vertical-align: top;
+
+            li{
+                padding: 10px;
+            }
         }
         footer{
             text-align: center;
