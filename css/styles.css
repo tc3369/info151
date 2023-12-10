@@ -422,14 +422,14 @@ textarea {
   margin-top: 100px;
   vertical-align: top;
 }
-#footer #codext ol {
+#footer #codext li ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20%;
   padding: 10px;
 }
-#footer #codext ol li {
+#footer #codext li ol li {
   text-decoration: none;
   list-style: none;
 }
